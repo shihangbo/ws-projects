@@ -19,5 +19,9 @@
   "homepage": "https://github.com/shihangbo/ws-projects#readme",
   "devDependencies": {
     "lerna": "^4.0.0"
-  }
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
