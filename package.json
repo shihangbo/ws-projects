@@ -1,22 +1,10 @@
 {
   "name": "ws-projects",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "create": "node packages/ws-cli/bin/vue.js create hello1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shihangbo/ws-projects.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shihangbo/ws-projects/issues"
-  },
-  "homepage": "https://github.com/shihangbo/ws-projects#readme",
   "devDependencies": {
     "lerna": "^4.0.0"
   },
