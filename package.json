@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shihangbo/ws-projects/issues"
   },
-  "homepage": "https://github.com/shihangbo/ws-projects#readme"
+  "homepage": "https://github.com/shihangbo/ws-projects#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
