@@ -9,7 +9,9 @@
   "dependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
+    "less": "^4.1.1",
     "loader-utils": "^2.0.0",
+    "mime": "^2.5.2",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
   },

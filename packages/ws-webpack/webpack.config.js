@@ -18,6 +18,20 @@ module.exports = {
     // loader执行：从右向左，从下到上
     rules:[
       {
+        test:/\.less$/,
+        use:['style-loader','css-loader','less-loader']
+      },
+      {
+        test:/\.jpeg$/,
+        // use:'file-loader'
+        use:{
+          loader:'url-loader',
+          options:{
+            limit:200*1024
+          }
+        }
+      },
+      {
         test:/\.js$/,
         use:{
           loader:'babel-loader',
