@@ -5,5 +5,8 @@
   "author": "WATSON",
   "homepage": "https://github.com/shihangbo/ws-projects/tree/main/packages/ws-cli-test#readme",
   "license": "ISC",
-  "main": "lib/ws-cli-test.js"
+  "main": "lib/ws-cli-test.js",
+  "dependencies": {
+    "loader-utils": "^2.0.0"
+  }
 }
