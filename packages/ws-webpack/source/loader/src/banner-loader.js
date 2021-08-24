@@ -2,6 +2,7 @@ let loaderUtils = require('loader-utils')
 // let validateOptions = require('schema-utils')
 let fs = require('fs')
 function loader(source) {
+  console.log('banner-loader~~~')
   this.cacheable && this.cacheable(false)
   let options = loaderUtils.getOptions(this)
   let cb = this.async()
@@ -26,5 +27,8 @@ function loader(source) {
   } else {
     cb(null,`/**${ options.text }**/${source}`)
   }
+}
+loader.pitch = function () {
+  console.log('banner-loader~~~pitch')
 }
 module.exports = loader

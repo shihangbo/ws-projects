@@ -40,7 +40,8 @@ module.exports = {
               '@babel/preset-env'
             ]
           }
-        }
+        },
+        // enforce:'pre'
       },
       {
         test:/\.js$/,
@@ -50,7 +51,8 @@ module.exports = {
             text:'ws',
             // filename:path.resolve(__dirname,'banner.js')
           }
-        }
+        },
+        enforce:'post'
       }
       // {
       //   test:/\.js$/,
