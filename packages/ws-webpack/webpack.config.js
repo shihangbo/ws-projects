@@ -52,7 +52,7 @@ module.exports = {
             // filename:path.resolve(__dirname,'banner.js')
           }
         },
-        enforce:'post'
+        // enforce:'post'
       }
       // {
       //   test:/\.js$/,
