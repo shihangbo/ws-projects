@@ -1,6 +1,7 @@
 const path = require('path')
-let DonePlugin = require('./source/plugin/src/DonePlugin')
-let AsyncPlugin = require('./source/plugin/src/AsyncPlugin')
+let DonePlugin = require('./source/plugins/src/DonePlugin')
+let AsyncPlugin = require('./source/plugins/src/AsyncPlugin')
+let FileListPlugin = require('./source/plugins/src/FileListPlugin')
 module.exports = {
   mode:'development',
   // entry:'./source/loader/index.js',
@@ -64,6 +65,9 @@ module.exports = {
   },
   plugins: [
     new DonePlugin(),
-    new AsyncPlugin()
+    new AsyncPlugin(),
+    new FileListPlugin({
+      filename:'list.md'
+    })
   ]
 }
