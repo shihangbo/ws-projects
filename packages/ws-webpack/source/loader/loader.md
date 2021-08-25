@@ -1,4 +1,8 @@
 ## loader
+- webpack只能处理js的模块，如果需要处理其他类型的文件，需要使用loader进行转换；
+- loader是webpack一个重要的概念，他是指用来将一段代码转换成另一段代码的webpack加载器。
+
+## loader
 - loader 执行顺序：从右到左，从下到上
 - loader 分   类：pre在前，normal，行内inline，post在后，
 - inline-loader
