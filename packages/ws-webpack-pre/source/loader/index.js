@@ -4,8 +4,11 @@
 // let c = a + b
 // console.log(c)
 
+let title = require('./a.js')
+console.log(title)
+
 // 样式引用
-import '../../index.less'
+// import '../../index.less'
 
 // 模版的图片引用
 // import p from '../../public/1111.jpeg'

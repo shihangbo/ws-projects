@@ -3,6 +3,7 @@ let DonePlugin = require('./source/plugins/src/DonePlugin')
 let AsyncPlugin = require('./source/plugins/src/AsyncPlugin')
 let FileListPlugin = require('./source/plugins/src/FileListPlugin')
 module.exports = {
+  context:process.cwd(),
   mode:'development',
   // entry:'./source/loader/index.js',
   entry:'./index.js',
@@ -20,20 +21,20 @@ module.exports = {
   module:{
     // loader执行：从右向左，从下到上
     rules:[
-      {
-        test:/\.less$/,
-        use:['style-loader','css-loader','less-loader']
-      },
-      {
-        test:/\.jpeg$/,
-        // use:'file-loader'
-        use:{
-          loader:'url-loader',
-          options:{
-            limit:200*1024
-          }
-        }
-      },
+      // {
+      //   test:/\.less$/,
+      //   use:['style-loader','css-loader','less-loader']
+      // },
+      // {
+      //   test:/\.jpeg$/,
+      //   // use:'file-loader'
+      //   use:{
+      //     loader:'url-loader',
+      //     options:{
+      //       limit:200*1024
+      //     }
+      //   }
+      // },
       {
         test:/\.js$/,
         use:{
@@ -46,17 +47,17 @@ module.exports = {
         },
         // enforce:'pre'
       },
-      {
-        test:/\.js$/,
-        use:{
-          loader:'banner-loader',
-          options:{
-            text:'ws',
-            // filename:path.resolve(__dirname,'banner.js')
-          }
-        },
-        // enforce:'post'
-      }
+      // {
+      //   test:/\.js$/,
+      //   use:{
+      //     loader:'banner-loader',
+      //     options:{
+      //       text:'ws',
+      //       // filename:path.resolve(__dirname,'banner.js')
+      //     }
+      //   },
+      //   // enforce:'post'
+      // }
       // {
       //   test:/\.js$/,
       //   use:['loader3','loader2','loader1',]
@@ -64,10 +65,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new DonePlugin(),
-    new AsyncPlugin(),
-    new FileListPlugin({
-      filename:'list.md'
-    })
+    // new DonePlugin(),
+    // new AsyncPlugin(),
+    // new FileListPlugin({
+    //   filename:'list.md'
+    // })
   ]
 }

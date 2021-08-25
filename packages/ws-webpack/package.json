@@ -1,0 +1,9 @@
+{
+  "name": "ws-webpack",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "shihangbo <shihangbo@126.com>",
+  "homepage": "https://github.com/shihangbo/ws-projects#readme",
+  "license": "ISC",
+  "main": "lib/ws-webpack.js"
+}
