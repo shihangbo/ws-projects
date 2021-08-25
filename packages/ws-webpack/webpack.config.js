@@ -1,8 +1,10 @@
 const path = require('path')
-
+let DonePlugin = require('./source/plugin/src/DonePlugin')
+let AsyncPlugin = require('./source/plugin/src/AsyncPlugin')
 module.exports = {
   mode:'development',
-  entry:'./source/loader/index.js',
+  // entry:'./source/loader/index.js',
+  entry:'./index.js',
   output:{
     filename:'build.js',
     path:path.resolve(__dirname,'dist')
@@ -59,5 +61,9 @@ module.exports = {
       //   use:['loader3','loader2','loader1',]
       // }
     ]
-  }
+  },
+  plugins: [
+    new DonePlugin(),
+    new AsyncPlugin()
+  ]
 }
