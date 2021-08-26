@@ -71,11 +71,11 @@ module.exports = {
     // new FileListPlugin({
     //   filename:'list.md'
     // })
-    new UploadPlugin({
-      bucket:'', // 储存空间
-      domain:'', // 域名
-      accessKey:'', // 密码
-      secretKey:''  // 密钥
-    })
+    // new UploadPlugin({
+    //   bucket:'', // 储存空间
+    //   domain:'', // 域名
+    //   accessKey:'', // 密码
+    //   secretKey:''  // 密钥
+    // })
   ]
 }
