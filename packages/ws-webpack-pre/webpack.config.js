@@ -2,6 +2,7 @@ const path = require('path')
 let DonePlugin = require('./source/plugins/src/DonePlugin')
 let AsyncPlugin = require('./source/plugins/src/AsyncPlugin')
 let FileListPlugin = require('./source/plugins/src/FileListPlugin')
+let UploadPlugin = require('./source/plugins/src/UploadPlugin')
 module.exports = {
   context:process.cwd(),
   mode:'development',
@@ -70,5 +71,11 @@ module.exports = {
     // new FileListPlugin({
     //   filename:'list.md'
     // })
+    new UploadPlugin({
+      bucket:'', // 储存空间
+      domain:'', // 域名
+      accessKey:'', // 密码
+      secretKey:''  // 密钥
+    })
   ]
 }
