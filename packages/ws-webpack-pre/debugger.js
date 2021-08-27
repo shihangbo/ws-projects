@@ -1,10 +1,8 @@
 
 const webpack = require('webpack')
 const webpackOptions = require('./webpack.config.js')
-
-const compiler = webpack(webpackOptions)
-
 debugger
+const compiler = webpack(webpackOptions)
 
 compiler.run((err,stats) => {
   console.log(111, err)
