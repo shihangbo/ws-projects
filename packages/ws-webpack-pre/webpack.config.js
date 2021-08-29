@@ -1,8 +1,8 @@
 const path = require('path')
-let DonePlugin = require('./source/plugins/src/DonePlugin')
-let AsyncPlugin = require('./source/plugins/src/AsyncPlugin')
-let FileListPlugin = require('./source/plugins/src/FileListPlugin')
-let UploadPlugin = require('./source/plugins/src/UploadPlugin')
+// let DonePlugin = require('./source/plugins/src/DonePlugin')
+// let AsyncPlugin = require('./source/plugins/src/AsyncPlugin')
+// let FileListPlugin = require('./source/plugins/src/FileListPlugin')
+// let UploadPlugin = require('./source/plugins/src/UploadPlugin')
 module.exports = {
   context:process.cwd(),
   mode:'development',
