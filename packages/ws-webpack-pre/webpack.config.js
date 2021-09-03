@@ -7,7 +7,8 @@ module.exports = {
   context:process.cwd(),
   mode:'development',
   // entry:'./source/loader/index.js',
-  entry:'./index.js',
+  // entry:'./index.js',
+  entry: path.resolve(__dirname,'index.js'),
   output:{
     filename:'build.js',
     path:path.resolve(__dirname,'dist')
