@@ -12,4 +12,4 @@
     - 挂载插件
     - 返回 compiler对象
     - const compiler = webpack(webpackOptions) 语句结束，compiler对象创建完成
-5. 
+5. 开始编译的入口 `compiler.run() 语句开始执行`
