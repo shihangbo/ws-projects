@@ -93,3 +93,9 @@ setTimeout(()=>{
   exports.stopSpinner()
 },3000)
 ```
+
+
+## 创建项目
+```js
+lerna create <name>
+``` 
